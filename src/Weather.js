@@ -31,9 +31,6 @@ function Weather() {
 
     }
 
-    //Converting K to C
-    let k = weather.temp;
-    let C = k - 273.15
 
     const WETHERINFO = () => {
         return <div>
@@ -43,7 +40,7 @@ function Weather() {
             </div>
             <div className="wetherContainer">
             <div className="wetherElement">
-                    Temperature : {C.toFixed(2)} &#8451;
+                    Temperature : {weather.temp} &#8451;
                 </div>
                 <div className="wetherElement">
                     Weather : {weather.descr}
