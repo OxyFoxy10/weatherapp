@@ -9,8 +9,7 @@ function Weather() {
     const [city, setCity] = useState('');
    
    const apiKey = process.env.REACT_APP_APIKEY;
-    //const apiKey = "f404c0bcddca7d09976ddaacf9cde884";
-
+  
     const apiCall = async (e) => {
         e.preventDefault()
         const location = e.target.elements.location.value
